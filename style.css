@@ -26,7 +26,7 @@ body {
 main {
   position: relative;
   width: 100rem;
-  min-width: 100rem;
+  /* min-width: 100rem; */
   height: 60rem;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
@@ -165,4 +165,31 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+@media screen and (max-width: 80rem) {
+  main {
+    width: 50rem;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dice {
+    top: calc((39.3rem + 46.1rem) / 2);
+    left: 25%;
+  }
+
+  .btn--new {
+    top: 2rem;
+  }
+
+  .btn--roll {
+    top: calc(39.3rem + 2.5rem);
+    left: 70%;
+  }
+  .btn--hold {
+    top: calc(46.1rem + 2.5rem);
+    left: 70%;
+  }
 }
